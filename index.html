@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>рџ”Ќ OSINT TOOLS - Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ! рџ”Ќ</title>
+    <style>
+        body {
+            background: #000080;
+            color: #00FF00;
+            font-family: "Courier New", monospace;
+            margin: 0;
+            padding: 20px;
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><rect fill="%23000080"/><circle cx="10" cy="10" r="2" fill="%23000099"/><circle cx="50" cy="50" r="2" fill="%23000099"/><circle cx="90" cy="90" r="2" fill="%23000099"/></svg>');
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #C0C0C0;
+            border: 3px outset #DFDFDF;
+            padding: 0;
+        }
+        
+        .header {
+            background: linear-gradient(to right, #000080, #0000FF, #000080);
+            color: #FFFF00;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px ridge #808080;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 32px;
+            text-shadow: 2px 2px #FF00FF;
+            animation: blink 1s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 50%, 100% { opacity: 1; }
+            25%, 75% { opacity: 0.7; }
+        }
+        
+        .marquee {
+            background: #FF00FF;
+            color: #FFFF00;
+            padding: 10px;
+            font-weight: bold;
+            border-top: 2px solid #000;
+            border-bottom: 2px solid #000;
+        }
+        
+        .content {
+            background: #FFFFFF;
+            color: #000000;
+            padding: 20px;
+        }
+        
+        .content h2 {
+            color: #FF0000;
+            text-decoration: underline;
+            font-size: 24px;
+        }
+        
+        .content h3 {
+            color: #0000FF;
+            background: #FFFF00;
+            padding: 5px;
+            border: 2px dashed #FF0000;
+        }
+        
+        table {
+            width: 100%;
+            border: 3px double #000000;
+            background: #EFEFEF;
+            margin: 15px 0;
+        }
+        
+        td {
+            border: 1px solid #808080;
+            padding: 10px;
+            vertical-align: top;
+        }
+        
+        .tool-name {
+            background: #000080;
+            color: #FFFFFF;
+            font-weight: bold;
+            padding: 8px;
+        }
+        
+        a {
+            color: #0000FF;
+            text-decoration: underline;
+        }
+        
+        a:visited {
+            color: #800080;
+        }
+        
+        .button {
+            background: #C0C0C0;
+            border: 2px outset #DFDFDF;
+            padding: 10px 20px;
+            color: #000000;
+            font-family: "Courier New", monospace;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 5px;
+        }
+        
+        .button:active {
+            border-style: inset;
+        }
+        
+        .counter {
+            background: #000000;
+            color: #00FF00;
+            padding: 10px;
+            text-align: center;
+            font-family: "Courier New", monospace;
+            border: 2px solid #00FF00;
+            margin: 20px 0;
+        }
+        
+        .footer {
+            background: #808080;
+            color: #FFFFFF;
+            padding: 15px;
+            text-align: center;
+            border-top: 3px ridge #DFDFDF;
+        }
+        
+        .gif-text {
+            display: inline-block;
+            animation: rainbow 2s linear infinite;
+        }
+        
+        @keyframes rainbow {
+            0% { color: #FF0000; }
+            16% { color: #FF7F00; }
+            33% { color: #FFFF00; }
+            50% { color: #00FF00; }
+            66% { color: #0000FF; }
+            83% { color: #8B00FF; }
+            100% { color: #FF0000; }
+        }
+        
+        .new {
+            background: #FF0000;
+            color: #FFFFFF;
+            padding: 2px 5px;
+            font-weight: bold;
+            animation: blink 0.5s infinite;
+        }
+        
+        ul {
+            list-style-type: square;
+        }
+        
+        .banner {
+            width: 468px;
+            height: 60px;
+            background: linear-gradient(45deg, #FF0000, #00FF00, #0000FF);
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px auto;
+            border: 3px ridge #FFFFFF;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>рџ”Ќ OSINT РРќРЎРўР РЈРњР•РќРўР« рџ”Ќ</h1>
+            <p class="gif-text">в… Р’СЃС‘ РґР»СЏ СЂР°Р·РІРµРґРєРё РёР· РѕС‚РєСЂС‹С‚С‹С… РёСЃС‚РѕС‡РЅРёРєРѕРІ в…</p>
+        </div>
+        
+        <div class="marquee">
+            <marquee>рџЊџ Р”РћР‘Р Рћ РџРћР–РђР›РћР’РђРўР¬ Р’ РњРР  OSINT! рџЊџ Р›СѓС‡С€РёРµ РёРЅСЃС‚СЂСѓРјРµРЅС‚С‹ РґР»СЏ РїРѕРёСЃРєР° РёРЅС„РѕСЂРјР°С†РёРё рџЊџ РћР±РЅРѕРІР»РµРЅРѕ: 1999 РіРѕРґ рџЊџ</marquee>
+        </div>
+        
+        <div class="content">
+            <h2>вљЎ Р§РўРћ РўРђРљРћР• OSINT? вљЎ</h2>
+            <p><b>OSINT</b> (Open Source Intelligence) - СЌС‚Рѕ СЂР°Р·РІРµРґРєР° РёР· РѕС‚РєСЂС‹С‚С‹С… РёСЃС‚РѕС‡РЅРёРєРѕРІ! Р­С‚Рѕ СЃР±РѕСЂ Рё Р°РЅР°Р»РёР· РёРЅС„РѕСЂРјР°С†РёРё РёР· РѕР±С‰РµРґРѕСЃС‚СѓРїРЅС‹С… РёСЃС‚РѕС‡РЅРёРєРѕРІ РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ РїРѕР»РµР·РЅС‹С… РґР°РЅРЅС‹С….</p>
+            
+            <div class="counter">
+                <blink>в–јв–јв–ј РџРћРЎР•РўРРўР•Р›Р¬ в„– 00042069 в–јв–јв–ј</blink>
+            </div>
+            
+            <h2>рџ› пёЏ РџРћРџРЈР›РЇР РќР«Р• РРќРЎРўР РЈРњР•РќРўР« OSINT</h2>
+            
+            <h3><span class="new">NEW!</span> РџРѕРёСЃРєРѕРІС‹Рµ СЃРёСЃС‚РµРјС‹</h3>
+            <table>
+                <tr>
+                    <td class="tool-name" width="30%">Google Hacking</td>
+                    <td>РСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ СЂР°СЃС€РёСЂРµРЅРЅС‹С… РѕРїРµСЂР°С‚РѕСЂРѕРІ РїРѕРёСЃРєР° Google РґР»СЏ РїРѕРёСЃРєР° РєРѕРЅС„РёРґРµРЅС†РёР°Р»СЊРЅРѕР№ РёРЅС„РѕСЂРјР°С†РёРё</td>
+                </tr>
+                <tr>
+                    <td class="tool-name">Shodan</td>
+                    <td>РџРѕРёСЃРєРѕРІР°СЏ СЃРёСЃС‚РµРјР° РґР»СЏ РїРѕРёСЃРєР° РїРѕРґРєР»СЋС‡РµРЅРЅС‹С… Рє РёРЅС‚РµСЂРЅРµС‚Сѓ СѓСЃС‚СЂРѕР№СЃС‚РІ (РєР°РјРµСЂС‹, СЃРµСЂРІРµСЂС‹, IoT)</td>
+                </tr>
+                <tr>
+                    <td class="tool-name">Censys</td>
+                    <td>РџРѕРёСЃРє Рё Р°РЅР°Р»РёР· СѓСЃС‚СЂРѕР№СЃС‚РІ Рё СЃРµС‚РµР№ РІ РёРЅС‚РµСЂРЅРµС‚Рµ</td>
+                </tr>
+            </table>
+            
+            <h3>рџ“§ РџРѕРёСЃРє РїРѕ email Рё Р»СЋРґСЏРј</h3>
+            <table>
+                <tr>
+                    <td class="tool-name" width="30%">Hunter.io</td>
+                    <td>РџРѕРёСЃРє email-Р°РґСЂРµСЃРѕРІ РїРѕ РґРѕРјРµРЅР°Рј РєРѕРјРїР°РЅРёР№</td>
+                </tr>
+                <tr>
+                    <td class="tool-name">Pipl</td>
+                    <td>РџРѕРёСЃРє Р»СЋРґРµР№ РїРѕ РёРјРµРЅРё, email, С‚РµР»РµС„РѕРЅСѓ</td>
+                </tr>
+                <tr>
+                    <td class="tool-name">Have I Been Pwned</td>
+                    <td>РџСЂРѕРІРµСЂРєР° СѓС‚РµС‡РµРє РґР°РЅРЅС‹С… РїРѕ email</td>
+                </tr>
+            </table>
+            
+            <h3>рџЊђ РЎРѕС†РёР°Р»СЊРЅС‹Рµ СЃРµС‚Рё Рё РјРѕРЅРёС‚РѕСЂРёРЅРі</h3>
+            <table>
+                <tr>
+                    <td class="tool-name" width="30%">Maltego</td>
+                    <td>Р’РёР·СѓР°Р»РёР·Р°С†РёСЏ СЃРІСЏР·РµР№ РјРµР¶РґСѓ Р»СЋРґСЊРјРё, РєРѕРјРїР°РЅРёСЏРјРё Рё РґР°РЅРЅС‹РјРё</td>
+                </tr>
+                <tr>
+                    <td class="tool-name">Sherlock</td>
+                    <td>РџРѕРёСЃРє Р°РєРєР°СѓРЅС‚РѕРІ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ РїРѕ username РІ 300+ СЃРѕС†СЃРµС‚СЏС…</td>
+                </tr>
+                <tr>
+                    <td class="tool-name">Social Searcher</td>
+                    <td>РњРѕРЅРёС‚РѕСЂРёРЅРі СѓРїРѕРјРёРЅР°РЅРёР№ РІ СЃРѕС†РёР°Р»СЊРЅС‹С… СЃРµС‚СЏС… РІ СЂРµР°Р»СЊРЅРѕРј РІСЂРµРјРµРЅРё</td>
+                </tr>
+            </table>
+            
+            <h3>рџ—єпёЏ Р“РµРѕР»РѕРєР°С†РёСЏ Рё РєР°СЂС‚С‹</h3>
+            <table>
+                <tr>
+                    <td class="tool-name" width="30%">Google Earth</td>
+                    <td>РЎРїСѓС‚РЅРёРєРѕРІС‹Рµ СЃРЅРёРјРєРё Рё 3D-РјРѕРґРµР»Рё РјРµСЃС‚РЅРѕСЃС‚Рё</td>
+                </tr>
+                <tr>
+                    <td class="tool-name">Yandex Maps</td>
+                    <td>РљР°СЂС‚С‹ СЃ РїР°РЅРѕСЂР°РјР°РјРё СѓР»РёС†, РѕСЃРѕР±РµРЅРЅРѕ С…РѕСЂРѕС€Рѕ РґР»СЏ Р РѕСЃСЃРёРё Рё РЎРќР“</td>
+                </tr>
+                <tr>
+                    <td class="tool-name">OpenStreetMap</td>
+                    <td>РЎРІРѕР±РѕРґРЅР°СЏ РєР°СЂС‚Р° РјРёСЂР° СЃ РґРµС‚Р°Р»СЊРЅРѕР№ РёРЅС„РѕСЂРјР°С†РёРµР№</td>
+                </tr>
+            </table>
+            
+            <h3>рџ“ё РђРЅР°Р»РёР· РёР·РѕР±СЂР°Р¶РµРЅРёР№</h3>
+            <table>
+                <tr>
+                    <td class="tool-name" width="30%">Google Images</td>
+                    <td>РћР±СЂР°С‚РЅС‹Р№ РїРѕРёСЃРє РїРѕ РёР·РѕР±СЂР°Р¶РµРЅРёСЏРј</td>
+                </tr>
+                <tr>
+                    <td class="tool-name">TinEye</td>
+                    <td>РџРѕРёСЃРє РїРѕС…РѕР¶РёС… РёР·РѕР±СЂР°Р¶РµРЅРёР№ Рё РёСЃС‚РѕС‡РЅРёРєРѕРІ С„РѕС‚Рѕ</td>
+                </tr>
+                <tr>
+                    <td class="tool-name">ExifTool</td>
+                    <td>РР·РІР»РµС‡РµРЅРёРµ РјРµС‚Р°РґР°РЅРЅС‹С… РёР· С„РѕС‚РѕРіСЂР°С„РёР№ (GPS, РєР°РјРµСЂР°, РґР°С‚Р°)</td>
+                </tr>
+            </table>
+            
+            <h2>рџ’Ў РџРћР›Р•Р—РќР«Р• РЎРћР’Р•РўР« Р”Р›РЇ OSINT</h2>
+            <ul>
+                <li>Р’СЃРµРіРґР° РїСЂРѕРІРµСЂСЏР№С‚Рµ РёРЅС„РѕСЂРјР°С†РёСЋ РёР· РЅРµСЃРєРѕР»СЊРєРёС… РёСЃС‚РѕС‡РЅРёРєРѕРІ</li>
+                <li>Р”РѕРєСѓРјРµРЅС‚РёСЂСѓР№С‚Рµ РІСЃРµ РЅР°Р№РґРµРЅРЅС‹Рµ РґР°РЅРЅС‹Рµ</li>
+                <li>РСЃРїРѕР»СЊР·СѓР№С‚Рµ VPN РґР»СЏ Р°РЅРѕРЅРёРјРЅРѕСЃС‚Рё</li>
+                <li>РџРѕРјРЅРёС‚Рµ Рѕ Р·Р°РєРѕРЅРЅРѕСЃС‚Рё РІР°С€РёС… РґРµР№СЃС‚РІРёР№</li>
+                <li>РђРІС‚РѕРјР°С‚РёР·РёСЂСѓР№С‚Рµ СЂСѓС‚РёРЅРЅС‹Рµ Р·Р°РґР°С‡Рё СЃ РїРѕРјРѕС‰СЊСЋ СЃРєСЂРёРїС‚РѕРІ</li>
+            </ul>
+            
+            <div class="banner">
+                рџ”Ґ РЎРљРћР Рћ: РќРћР’Р«Р• РРќРЎРўР РЈРњР•РќРўР«! рџ”Ґ
+            </div>
+            
+            <center>
+                <button class="button" onclick="alert('РЎРїР°СЃРёР±Рѕ Р·Р° РёРЅС‚РµСЂРµСЃ Рє OSINT!')">рџ“Ґ РЎРљРђР§РђРўР¬ РЎРџРРЎРћРљ</button>
+                <button class="button" onclick="alert('Р“РѕСЃС‚РµРІР°СЏ РєРЅРёРіР° РІСЂРµРјРµРЅРЅРѕ РЅРµРґРѕСЃС‚СѓРїРЅР°!')">вњЌпёЏ Р“РћРЎРўР•Р’РђРЇ РљРќРР“Рђ</button>
+                <button class="button" onclick="alert('Р”РѕР±Р°РІР»РµРЅРѕ РІ РёР·Р±СЂР°РЅРЅРѕРµ!')">в­ђ Р’ РР—Р‘Р РђРќРќРћР•</button>
+            </center>
+        </div>
+        
+        <div class="footer">
+            <p>рџЊђ Р›СѓС‡С€РёР№ СЃР°Р№С‚ РїСЂРѕ OSINT СЃ 1999 РіРѕРґР° рџЊђ</p>
+            <p>вљ пёЏ Р’СЃСЏ РёРЅС„РѕСЂРјР°С†РёСЏ РїСЂРµРґСЃС‚Р°РІР»РµРЅР° РІ РѕР±СЂР°Р·РѕРІР°С‚РµР»СЊРЅС‹С… С†РµР»СЏС… вљ пёЏ</p>
+            <p><small>РћРїС‚РёРјРёР·РёСЂРѕРІР°РЅРѕ РґР»СЏ Netscape Navigator 4.0 Рё Internet Explorer 5.0</small></p>
+            <p>рџ“§ <a href="mailto:admin@osint-tools.net" style="color: #FFFF00;">admin@osint-tools.net</a></p>
+        </div>
+    </div>
+</body>
+</html>
