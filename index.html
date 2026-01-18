@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔍 OSINT TOOLS — Добро пожаловать! 🔍</title>
+    <style>
+        body {
+            background: #000080;
+            color: #00FF00;
+            font-family: "Courier New", monospace;
+            margin: 0;
+            padding: 20px;
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><rect fill="%23000080"/><circle cx="10" cy="10" r="2" fill="%23000099"/><circle cx="50" cy="50" r="2" fill="%23000099"/><circle cx="90" cy="90" r="2" fill="%23000099"/></svg>');
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #C0C0C0;
+            border: 3px outset #DFDFDF;
+        }
+        .header {
+            background: linear-gradient(to right, #000080, #0000FF, #000080);
+            color: #FFFF00;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 32px;
+            text-shadow: 2px 2px #FF00FF;
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%,50%,100%{opacity:1}
+            25%,75%{opacity:.7}
+        }
+        .marquee {
+            background: #FF00FF;
+            color: #FFFF00;
+            padding: 10px;
+            font-weight: bold;
+        }
+        .content {
+            background: #FFFFFF;
+            color: #000000;
+            padding: 20px;
+        }
+        h2 { color:#FF0000; text-decoration:underline }
+        h3 {
+            color:#0000FF;
+            background:#FFFF00;
+            padding:5px;
+            border:2px dashed #FF0000;
+        }
+        table {
+            width:100%;
+            border:3px double #000;
+            background:#EFEFEF;
+            margin:15px 0;
+        }
+        td {
+            border:1px solid #808080;
+            padding:10px;
+            vertical-align:top;
+        }
+        .tool-name {
+            background:#000080;
+            color:#FFF;
+            font-weight:bold;
+        }
+        .counter {
+            background:#000;
+            color:#00FF00;
+            padding:10px;
+            text-align:center;
+            border:2px solid #00FF00;
+            margin:20px 0;
+        }
+        .banner {
+            width:468px;
+            height:60px;
+            background:linear-gradient(45deg,#FF0000,#00FF00,#0000FF);
+            color:#FFF;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            margin:10px auto;
+            border:3px ridge #FFF;
+            font-weight:bold;
+        }
+        .button {
+            background:#C0C0C0;
+            border:2px outset #DFDFDF;
+            padding:10px 20px;
+            font-weight:bold;
+            cursor:pointer;
+            margin:5px;
+        }
+        .new {
+            background:#FF0000;
+            color:#FFF;
+            padding:2px 5px;
+            font-weight:bold;
+            animation:blink .5s infinite;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>🔍 OSINT ИНСТРУМЕНТЫ 🔍</h1>
+        <p>✨ Всё для разведки из открытых источников ✨</p>
+    </div>
+
+    <div class="marquee">
+        <marquee>🌟 ДОБРО ПОЖАЛОВАТЬ В МИР OSINT! 🌟 Лучшие инструменты для поиска информации 🌟 Обновлено: 1999 год 🌟</marquee>
+    </div>
+
+    <div class="content">
+        <h2>⚠ ЧТО ТАКОЕ OSINT? ⚠</h2>
+        <p><b>OSINT</b> (Open Source Intelligence) — это разведка из открытых источников. Сбор и анализ информации из общедоступных данных.</p>
+
+        <div class="counter">
+            ►►► ПОСЕТИТЕЛЬ № 00042069 ◄◄◄
+        </div>
+
+        <h2>🛠 ПОПУЛЯРНЫЕ ИНСТРУМЕНТЫ OSINT</h2>
+
+        <h3><span class="new">NEW!</span> Поисковые системы</h3>
+        <table>
+            <tr><td class="tool-name">Google Hacking</td><td>Расширенные операторы поиска Google</td></tr>
+            <tr><td class="tool-name">Shodan</td><td>Поиск подключённых к интернету устройств</td></tr>
+            <tr><td class="tool-name">Censys</td><td>Анализ сетей и серверов</td></tr>
+        </table>
+
+        <h3>📧 Поиск по email и людям</h3>
+        <table>
+            <tr><td class="tool-name">Hunter.io</td><td>Поиск email по доменам</td></tr>
+            <tr><td class="tool-name">Pipl</td><td>Поиск людей</td></tr>
+            <tr><td class="tool-name">Have I Been Pwned</td><td>Проверка утечек данных</td></tr>
+        </table>
+
+        <h3>🌍 Геолокация и карты</h3>
+        <table>
+            <tr><td class="tool-name">Google Earth</td><td>Спутниковые снимки</td></tr>
+            <tr><td class="tool-name">Yandex Maps</td><td>Карты и панорамы улиц</td></tr>
+            <tr><td class="tool-name">OpenStreetMap</td><td>Свободная карта мира</td></tr>
+        </table>
+
+        <h2>💡 ПОЛЕЗНЫЕ СОВЕТЫ</h2>
+        <ul>
+            <li>Проверяйте информацию из нескольких источников</li>
+            <li>Документируйте находки</li>
+            <li>Соблюдайте закон</li>
+        </ul>
+
+        <div class="banner">🔥 СКОРО: НОВЫЕ ИНСТРУМЕНТЫ! 🔥</div>
+
+        <center>
+            <button class="button" onclick="alert('Спасибо за интерес к OSINT!')">📥 СКАЧАТЬ СПИСОК</button>
+            <button class="button" onclick="alert('Гостевая книга недоступна')">✖ ГОСТЕВАЯ КНИГА</button>
+            <button class="button" onclick="alert('Добавлено в избранное!')">★ В ИЗБРАННОЕ</button>
+        </center>
+    </div>
+
+    <div class="footer" style="background:#808080;color:#FFF;padding:15px;text-align:center">
+        <p>🌐 Лучший сайт про OSINT с 1999 года 🌐</p>
+        <p>⚠ Информация предоставлена в образовательных целях ⚠</p>
+        <p><small>Оптимизировано под Netscape Navigator 4.0 и Internet Explorer 5.0</small></p>
+        <p>📧 <a href="mailto:admin@osint-tools.net" style="color:#FFFF00">admin@osint-tools.net</a></p>
+    </div>
+</div>
+</body>
+</html>
